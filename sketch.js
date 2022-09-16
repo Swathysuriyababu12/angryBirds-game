@@ -76,7 +76,7 @@ function draw() {
   platform.display();
   //log6.display();
   slingshot.display();
-  console.log(bird.body.speed);
+  // console.log(bird.body.speed);
 }
 
 function mouseDragged() {
@@ -100,7 +100,7 @@ function keyPressed() {
 
 async function getBackgroundImg() {
   var response = await fetch(
-    "http://worldtimeapi.org/api/timezone/Asia/Kolkata"
+    "https://worldtimeapi.org/api/timezone/Asia/Kolkata"
   );
   var responseJSON = await response.json();
 
@@ -114,5 +114,5 @@ async function getBackgroundImg() {
   }
 
   backgroundImg = loadImage(bg);
-  console.log(backgroundImg);
+  //console.log(backgroundImg);
 }
